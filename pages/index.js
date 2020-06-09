@@ -1,7 +1,7 @@
-const Page = () => (
+const IndexPage = () => (
   <div>
-    <h1>Hello NextJS</h1>
+    <h1>IndexPage</h1>
   </div>
 );
 
-export default Page;
+export default IndexPage;
