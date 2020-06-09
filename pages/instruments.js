@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from '../src/components/Header/Header'
 import Menu from '../src/components/Menu/Menu'
 import Instruments from '../src/components/Instruments/Instruments'

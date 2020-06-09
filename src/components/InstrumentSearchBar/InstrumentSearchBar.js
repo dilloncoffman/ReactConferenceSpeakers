@@ -1,3 +1,5 @@
+import React from 'react';
+
 const InstrumentSearchBar = () => (
   <div>
     <h1>InstrumentSearchBar</h1>
