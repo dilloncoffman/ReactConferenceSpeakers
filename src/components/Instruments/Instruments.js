@@ -1,20 +1,7 @@
 import React from 'react';
+import withData from './withData'
 
-const Instruments = () => {
-  const instruments = [
-    {
-      imageSrc: 'guitars',
-      name: 'Guitars'
-    },
-    {
-      imageSrc: 'amp',
-      name: 'Amplifiers'
-    },
-    {
-      imageSrc: 'drums',
-      name: 'Drums'
-    },
-  ]
+const Instruments = ({ instruments }) => {
   return (
     <>
       {instruments.map(({ imageSrc, name }) => {
@@ -24,4 +11,5 @@ const Instruments = () => {
   )
 }
 
-export default Instruments;
+const maxInstrumentsToShow = 2;
+export default withData(maxInstrumentsToShow)(Instruments); // Higher Order Component (HOC) - used to separate data from the component that renders that data
