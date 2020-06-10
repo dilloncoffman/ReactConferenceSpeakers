@@ -1,0 +1,4 @@
+/* Can combine Tailwind styles into own custom class using @apply directive, you MUST import this file in index.css */
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
